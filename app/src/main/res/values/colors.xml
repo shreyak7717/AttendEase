@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black" tools:ignore="DuplicateDefinition">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_purple">#E3D4FF</color>
+    <color name="blue">#92C4F7</color>
+    <color name="primary_color">#0B4C84</color>
+    <color name="dark_gray">#555555</color>
+    <color name="peach">#E9D8DE</color>
+    <color name="green">#96FF86</color>
+
+
+</resources>
