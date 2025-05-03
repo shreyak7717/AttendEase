@@ -2,25 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5D4FF"
+    android:background="@drawable/signup_bg"
     tools:context=".MainActivity">
 
 
     <!-- Top Green Text Banner -->
-    <TextView
-        android:id="@+id/topBannerText"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:padding="4dp"
-        android:text="Join AttendEase today \nand start exploring!"
-        android:textSize="14sp"
-        android:textColor="#5E2AAF"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:background="@drawable/rounded_button"
-        android:elevation="6dp" />
 
 
     <!-- Centered White Card with Content -->
@@ -35,10 +21,29 @@
            android:src="@drawable/rectangle1" /> -->
 
 
+    <!-- Already a user? and Login Button Outside -->
+
+    <TextView
+        android:id="@+id/topBannerText"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Join AttendEase today \nand start exploring!"
+        android:textColor="#5E2AAF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
     <LinearLayout
-        android:layout_width="230dp"
-        android:layout_height="410dp"
+        android:layout_width="370dp"
+        android:layout_height="525dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="-6dp"
         android:background="@drawable/rounded_blue_bg"
         android:elevation="8dp"
         android:gravity="center_horizontal"
@@ -50,13 +55,26 @@
 
 
         <!-- Full Name Input -->
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:adjustViewBounds="true"
-            android:contentDescription="Welcome Image"
-            android:src="@drawable/logo" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="Welcome Image"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="App Name"
+                android:src="@drawable/text_logo" />
+        </LinearLayout>
 
 
         <EditText
@@ -122,15 +140,19 @@
 
 
         <!-- Illustration Image -->
+
+
+        <!-- Row: Already a user? + Login Button -->
+
         <Button
 
 
             android:id="@+id/btnSignUp"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
             android:layout_marginTop="14dp"
-            android:layout_marginEnd="55dp"
+            android:layout_marginEnd="118dp"
             android:backgroundTint="#96FF86"
             android:padding="2dp"
             android:text="Sign Up"
@@ -138,16 +160,13 @@
             android:textSize="12sp"
             android:textStyle="bold" />
 
-
         <ImageView
-            android:layout_width="190dp"
-            android:layout_height="80dp"
+            android:layout_width="380dp"
+            android:layout_height="230dp"
             android:layout_marginTop="16dp"
             android:scaleType="fitCenter"
             android:src="@drawable/img_1" />
 
-
-        <!-- Row: Already a user? + Login Button -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -161,22 +180,21 @@
 
     </LinearLayout>
 
-
-    <!-- Already a user? and Login Button Outside -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="560dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="715dp"
         android:text="Already a user?"
         android:textColor="#4F1F9B"
-        android:textSize="12sp" />
+        android:textSize="13sp" />
     <Button
         android:id="@+id/btnGetStarted"
         android:layout_width="50dp"
         android:layout_height="33dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="550dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="710dp"
         android:backgroundTint="#96FF86"
         android:text="LogIn"
         android:padding="5dp"

@@ -11,13 +11,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.attendease"
+        android:theme="@style/Theme.AttendEase"
         tools:targetApi="31">
 
 
         <!-- RegisterActivity as the main activity -->
+<!--        <activity-->
+<!--            android:name=".RegisterActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+        <!-- SignUpActivity definition without intent-filter -->
+<!--        <activity-->
+<!--            android:name=".SignUpActivity"-->
+<!--            android:exported="true" />-->
+<!--        <activity-->
+<!--            android:name=".LoginActivity" />-->
+
         <activity
-            android:name=".RegisterActivity"
+            android:name=".SignUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,13 +42,6 @@
             </intent-filter>
         </activity>
 
-
-        <!-- SignUpActivity definition without intent-filter -->
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity" />
 
 
 
