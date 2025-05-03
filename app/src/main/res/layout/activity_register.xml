@@ -5,61 +5,75 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
+    android:padding="30dp"
     android:background="@drawable/register_bg">
+<!--    android:layout_marginTop="-48dp">-->
 
     <!-- Title Text -->
-    <TextView
-        android:id="@+id/titleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome To"
-        android:textSize="22sp"
-        android:textStyle="normal"
-        android:textColor="#000000"
-        android:gravity="center"/>
 
     <!-- App Name (Bold) -->
-    <TextView
-        android:id="@+id/appNameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AttendEase!"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:layout_marginTop="4dp"/>
 
-    <!-- Subtitle -->
-    <TextView
-        android:id="@+id/subtitleText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your journey starts here. Explore,\nconnect, and enjoy."
-        android:textSize="14sp"
-        android:textColor="#555555"
-        android:gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="24dp"/>
+        android:orientation="vertical"
+        android:layout_marginTop="-65dp"
+        android:gravity="center">
 
-    <!-- Illustration Image -->
-    <ImageView
-        android:id="@+id/illustration"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:src="@drawable/register_animation"
-        android:layout_marginBottom="32dp"
-        android:contentDescription="Illustration"/>
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:gravity="center"/>
 
-    <!-- Get Started Button -->
-    <Button
-        android:id="@+id/getStartedBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Started"
-        android:textColor="#FFFFFF"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:background="@drawable/rounded_button"/>
+        <!-- App Name (Bold) -->
+        <TextView
+            android:id="@+id/appNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AttendEase!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your journey starts here. Explore,\nconnect, and enjoy."
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Illustration Image -->
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/register_animation"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="Illustration"/>
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/getStartedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:background="@drawable/register_rounded_btn"/>
+
+    </LinearLayout>
 </LinearLayout>
